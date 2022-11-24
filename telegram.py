@@ -28,4 +28,3 @@ schedule.every(1).minutes.do(sendmail)
 #schedule.every().day.at("00:55").do(sendmail)
 while True:
     schedule.run_pending()
-    time.sleep(1)
